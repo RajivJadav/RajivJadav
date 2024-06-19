@@ -1,0 +1,486 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>boostraop</title>
+    <link rel="stylesheet" href="./form2.css">
+    <style>
+        input[type=radio]#Yellow {
+            accent-color: pink;
+            /* visibility: hidden; */
+
+        }
+
+        input[type=radio]#Green {
+            accent-color: rgb(0, 255, 0);
+            /* background-color: black; */
+        }
+
+        .script {
+            display: block;
+            position: relative;
+            padding-left: 45px;
+            margin-bottom: 15px;
+            cursor: pointer;
+            font-size: 20px;
+        }
+
+        .script input[type=checkbox] {
+            visibility: hidden;
+        }
+
+        .geekmark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 25px;
+            width: 25px;
+            background-color: rgb(11, 11, 11);
+        }
+
+        .script:hover input~.geekmark {
+            background-color: yellow;
+        }
+
+        .script input:active~.geekmark {
+            background-color: red;
+        }
+
+        .script input:checked~.geekmark {
+            background-color: rgb(242, 31, 3);
+        }
+
+        .geekmark:after {
+            content: "";
+            position: absolute;
+            display: none;
+        }
+
+        .script input:checked~.geekmark:after {
+            display: block;
+        }
+
+        .script .geekmark:after {
+            left: 6px;
+            bottom: 5px;
+            width: 6px;
+            height: 6px;
+            border: solid white;
+            border-width: 4px 4px 4px 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="a">
+        <div class="a2">
+            <img src="./logo company.jpg" height="200px" width="200px" class="a1">
+            <div style="color: red; font-size: 30px; font-weight: 900;">Company Name</div>
+        </div>
+        <div class="a2">
+            <div style="color: gray; font-weight: 900;">
+                <p>Addres 1247 rihana road miramar-fl</p>
+                <p>Phone[123] 445 2896 /(009) 225 445 741</p>
+            </div>
+            <div><img src="./person.jpg" height="180px" width="180px" class="a1"></div>
+        </div>
+    </div>
+    <form>
+        <fieldset class="a3">
+            <legend style="color: blue; font-size: 40px; font-weight: 900;"><b><u>Regestration Form</u></b></legend>
+            <div class="a4">
+                <div class="a7"> Date</div>
+                <div class="a5">
+                    <div class="a8">
+                        <input type="text" placeholder="2" class="a6" maxlength="1">
+                        <label for="text" style="color: gray;">D</label>
+                    </div>
+                    <div class="a8">
+                        <input type="text" placeholder="5" class="a6" maxlength="1">
+                        <label for="text" style="color: gray;">D</label>
+                    </div>
+
+                </div>
+                <div class="a5">
+                    <div class="a8">
+                        <input type="text" placeholder="0" class="a6" maxlength="1">
+                        <label for="text" style="color: gray;">M</label>
+                    </div>
+                    <div class="a8">
+                        <input type="text" placeholder="7" class="a6" maxlength="1">
+                        <label for="text" style="color: gray;">M</label>
+                    </div>
+
+                </div>
+                <div class="a5">
+                    <div class="a8">
+                        <input type="text" placeholder="2" class="a6" maxlength="1">
+                        <label for="text" style="color: gray;">Y</label>
+                    </div>
+                    <div class="a8">
+                        <input type="tel" placeholder="0" class="a6" maxlength="1">
+                        <label for="text" style="color: gray;">Y</label>
+                    </div>
+                    <div class="a8">
+                        <input type="text" placeholder="0" class="a6" maxlength="1">
+                        <label for="text" style="color: gray;">Y</label>
+                    </div>
+                    <div class="a8">
+                        <input type="text" placeholder="4" class="a6" maxlength="1">
+                        <label for="text" style="color: gray;">Y</label>
+                    </div>
+                </div>
+            </div>
+            <div class="a9">
+                <div class="a10">
+                    <Div style="color: blue; font-size: 20px; font-weight: 900;">Dear sir / Madam</Div>
+                    <div style="color: gray;">
+                        Loern ipsumsit amet conceture <br>apriicaing alt,sad now dommyny nibh asimery<br>temulation is
+                        fast
+                    </div>
+                </div>
+                <div class="a10">
+                    <div class="a10">
+                        <label for="text" style="color: blue;">Account Holder's Name</label>
+                        <input type="text" placeholder="jadavrajiv@SBIa/c" class="a11">
+                    </div>
+                    <div class="a13">
+                        <div style="color: blue;">Membership Type </div>
+                        <label class="script">
+                            Regular
+                            <input type="checkbox">
+                            <span class="geekmark"></span>
+                        </label>
+                        <label class="script">
+                            Exlusive
+                            <input type="checkbox">
+                            <span class="geekmark"></span>
+                        </label>
+                        <label class="script">
+                            VIP Membership
+                            <input type="checkbox">
+                            <span class="geekmark"></span>
+                        </label>
+
+                    </div>
+                </div>
+            </div>
+            <div class="a15">
+                <div
+                    style="color: blue; font-size: 30px; font-weight: 900; padding: 20px; font-family: Verdana, Geneva, Tahoma, sans-serif;">
+                    <u>Personal Information</u>
+                </div>
+            </div>
+            <div class="main">
+                <div class="a16">
+                    <label for="text" style="color: blue;font-size: 20px;">Name</label>
+                    <div class="a177">
+                        <input type="text" placeholder="NAME" class="a17">
+                        <input type="text" placeholder="SURNAME" class="a17">
+                        <input type="text" placeholder="FATHER NAME" class="a17">
+                    </div>
+
+
+                </div>
+                <div class="a18">
+                    <div class="a20">Date of Birth</div>
+                    <div class="a19">
+                        <div class="a5">
+                            <div class="a8">
+                                <input type="text" placeholder="2" class="a6">
+                                <label for="text" style="color: gray;">D</label>
+                            </div>
+                            <div class="a8">
+                                <input type="text" placeholder="5" class="a6">
+                                <label for="text" style="color: gray;">D</label>
+                            </div>
+
+                        </div>
+                        <div class="a5">
+                            <div class="a8">
+                                <input type="text" placeholder="0" class="a6">
+                                <label for="text" style="color: gray;">M</label>
+                            </div>
+                            <div class="a8">
+                                <input type="text" placeholder="7" class="a6">
+                                <label for="text" style="color: gray;">M</label>
+                            </div>
+
+                        </div>
+                        <div class="a5">
+                            <div class="a8">
+                                <input type="text" placeholder="2" class="a6">
+                                <label for="text" style="color: gray;">Y</label>
+                            </div>
+                            <div class="a8">
+                                <input type="text" placeholder="0" class="a6">
+                                <label for="text" style="color: gray;">Y</label>
+                            </div>
+                            <div class="a8">
+                                <input type="text" placeholder="0" class="a6">
+                                <label for="text" style="color: gray;">Y</label>
+                            </div>
+                            <div class="a8">
+                                <input type="text" placeholder="4" class="a6">
+                                <label for="text" style="color: gray;">Y</label>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="a21">
+                    <div style="color: blue;font-weight: 900;">Gender :</div>
+                    <div class="a22">
+                        <div style="color: gray;"> <input type="radio" id="Yellow" name="color" value="Yellow">
+                              <label for="Yellow">Male</label>
+                        </div>
+                        <div style="color: gray;"> <input type="radio" id="Green" name="color" value="Green">
+                              <label for="Green">Fmale</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="a23">
+                    <div class="a24">
+                        <div style="color: blue;font-weight: 900;">Recidence Status :</div>
+                        <div class="a22">
+                            <div style="color: gray;"> <input type="radio" id="html" name="fav_language" value="HTML">
+                                  <label for="html">President</label>
+                            </div>
+                            <div style="color: gray;"> <input type="radio" id="html" name="fav_language" value="HTML">
+                                  <label for="html">non President</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="a25">
+                        <div style="color: blue;font-weight: 900;">Martial Status :</div>
+                        <div class="a22">
+                            <div style="color: gray;"> <input type="radio" id="html" name="fav_language" value="HTML">
+                                  <label for="html">Married</label>
+                            </div>
+                            <div style="color: gray;"> <input type="radio" id="html" name="fav_language" value="HTML">
+                                  <label for="html"> unMarried</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="a26">
+                    <div class="a27">
+                        <div style="color: blue; font-weight: 900;">Religion</div>
+                        <div class="277">
+                            <input type="text" placeholder="I" class="a2777">
+                            <input type="text" placeholder="N" class="a2777">
+                            <input type="text" placeholder="D" class="a2777">
+                            <input type="text" placeholder="I" class="a2777">
+                            <input type="text" placeholder="A" class="a2777">
+                            <input type="text" placeholder="" class="a2777">
+                            <input type="text" placeholder="" class="a2777">
+                            <input type="text" placeholder="" class="a2777">
+                        </div>
+                    </div>
+                    <div class="a29">
+                        <div style="color: blue; font-weight: 900;">Nationality</div>
+                        <div class="277">
+                            <input type="text" placeholder="" class="a2777">
+                            <input type="text" placeholder="" class="a2777">
+                            <input type="text" placeholder="" class="a2777">
+                            <input type="text" placeholder="" class="a2777">
+                            <input type="text" placeholder="" class="a2777">
+                            <input type="text" placeholder="" class="a2777">
+                            <input type="text" placeholder="" class="a2777">
+                            <input type="text" placeholder="" class="a2777">
+                        </div>
+                    </div>
+                </div>
+                <div class="a30">
+                    <div class="a31">
+                        <div style="color: blue; font-weight: 900;">National ID no.</div>
+                        <div class="a311">
+                            <div class="b311">
+                                <input type="text" placeholder="5" class="b321" maxlength="1">
+                                <input type="text" placeholder="5" class="b321" maxlength="1">
+                                <input type="text" placeholder="6" class="b321" maxlength="1">
+                            </div>
+                            <div class="b311">
+                                <input type="text" placeholder="2" class="b321" maxlength="1">
+                                <input type="text" placeholder="1" class="b321" maxlength="1">
+                                <input type="text" placeholder="4" class="b321" maxlength="1">
+                            </div>
+                            <div class="b311">
+                                <input type="text" placeholder="3" class="b321" maxlength="1">
+                                <input type="text" placeholder="3" class="b321" maxlength="1">
+                                <input type="text" placeholder="5" class="b321" maxlength="1">
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="a32">
+                        <div style="color: blue; font-weight: 900;">Passport No.</div>
+                        <div class="a311">
+                            <div class="b311">
+                                <input type="text" placeholder="5" class="b321">
+                                <input type="text" placeholder="5" class="b321">
+                                <input type="text" placeholder="6" class="b321">
+                            </div>
+                            <div class="b311">
+                                <input type="text" placeholder="2" class="b321">
+                                <input type="text" placeholder="1" class="b321">
+                                <input type="text" placeholder="4" class="b321">
+                            </div>
+                            <div class="b311">
+                                <input type="text" placeholder="3" class="b321">
+                                <input type="text" placeholder="3" class="b321">
+                                <input type="text" placeholder="5" class="b321">
+                                <input type="text" placeholder="1" class="b321">
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="a33">
+                    <div class="a34">
+                        <div style="color: blue; font-weight: 900;">Driving Licence</div>
+                        <div class="a311">
+                            <div class="b311">
+                                <input type="text" placeholder="Gj" class="b321">
+                            </div>
+                            <div class="b311">
+                                <input type="text" placeholder="0" class="b321">
+                                <input type="text" placeholder="3" class="b321">
+                            </div>
+                            <div class="b311">
+                                <input type="text" placeholder="2" class="b321">
+                                <input type="text" placeholder="0" class="b321">
+                                <input type="text" placeholder="2" class="b321">
+                                <input type="text" placeholder="3" class="b321">
+                            </div>
+                            <div class="b311">
+                                <input type="text" placeholder="0" class="b321">
+                                <input type="text" placeholder="0" class="b321">
+                                <input type="text" placeholder="0" class="b321">
+                                <input type="text" placeholder="9" class="b321">
+                                <input type="text" placeholder="7" class="b321">
+                                <input type="text" placeholder="0" class="b321">
+                                <input type="text" placeholder="4" class="b321">
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="a35">
+                        <div style="color: blue; font-weight: 900;">TID Id no.</div>
+                        <div class="277">
+                            <input type="text" placeholder="" class="a2777">
+                            <input type="text" placeholder="" class="a2777">
+                            <input type="text" placeholder="" class="a2777">
+                            <input type="text" placeholder="" class="a2777">
+                            <input type="text" placeholder="" class="a2777">
+                            <input type="text" placeholder="" class="a2777">
+                            <input type="text" placeholder="" class="a2777">
+                            <input type="text" placeholder="" class="a2777">
+                        </div>
+                    </div>
+                </div>
+                <div class="a36">
+                    <div style="color: blue; font-weight: 900;">Father Name</div>
+                    <div class="a177"> <input type="text" placeholder="SURNAME" class="a17">
+                        <input type="text" placeholder="NAME" class="a17">
+                        <input type="text" placeholder="Grandfather NAME" class="a17">
+                    </div>
+                </div>
+                <div class="a38">
+                    <div style="color: blue; font-weight: 900;">Mother Name</div>
+                    <div class="a177"> <input type="text" placeholder="SURNAME" class="a17">
+                        <input type="text" placeholder="NAME" class="a17">
+                        <input type="text" placeholder="Father NAME" class="a17">
+                    </div>
+                </div>
+                <div class="a39">
+                    <div style="color: blue; font-weight: 900;">Other Id number(in case national ID/Password Id not
+                        avilable)</div>
+                    <div> <input type="text" placeholder="     (222) 159 911" class="a40"></div>
+                </div>
+                <div class="a41">
+                    <div style="color: blue; font-weight: 900;">Present address</div>
+                    <div> <input type="text" placeholder="     current address" class="a42"></div>
+                </div>
+                <div class="a43">
+                    <div class="a44">
+                        <div style="color: blue; font-weight: 900;">House Number</div>
+                        <div> <input type="text" placeholder="     11114 2566" class="a45"></div>
+                    </div>
+                    <div class="a46">
+                        <div style="color: blue; font-weight: 900;">City</div>
+                        <div> <input type="text" placeholder="     R A J K O T" class="a47"></div>
+                    </div>
+                    <div class="a46">
+                        <div style="color: blue; font-weight: 900;">ZIP</div>
+                        <div> <input type="text" placeholder="     R A J K O T" class="a47"></div>
+                    </div>
+                    <div class="a46">
+                        <div style="color: blue; font-weight: 900;">Country</div>
+                        <div> <input type="text" placeholder="     I N A D I A" class="a47"></div>
+                    </div>
+                </div>
+                <div class="a43">
+                    <div class="a44">
+                        <div style="color: blue; font-weight: 900;">Phone Number</div>
+                        <div> <input type="text" placeholder="     98257xxxxx" class="a45"></div>
+                    </div>
+                    <div class="a46">
+                        <div style="color: blue; font-weight: 900;">Fax</div>
+                        <div> <input type="text" placeholder="     356 45xxxx" class="a47"></div>
+                    </div>
+                    <div class="a46">
+                        <div style="color: blue; font-weight: 900;">E-mail</div>
+                        <div> <input type="text" placeholder="     xyz@gmail.com" class="a47"></div>
+                    </div>
+                </div>
+                <div class="a48">
+                    <div style="color: blue; font-weight: 900;">Premenet address</div>
+                    <div> <input type="text" placeholder="     ADDRESS" class="a42"></div>
+                </div>
+                <div class="a43">
+                    <div class="a441">
+                        <div style="color: blue; font-weight: 900;">House no </div>
+                        <div> <input type="text" placeholder="     11114 2566" class="a45"></div>
+                    </div>
+                    <div class="a46">
+                        <div style="color: blue; font-weight: 900;">Flat no.</div>
+                        <div> <input type="text" placeholder="     0212" class="a47"></div>
+                    </div>
+                    <div class="a46">
+                        <div style="color: blue; font-weight: 900;">Road no</div>
+                        <div> <input type="text" placeholder="     Alkapuri sure05" class="a47"></div>
+                    </div>
+                    <div class="a46">
+                        <div style="color: blue; font-weight: 900;">Area</div>
+                        <div> <input type="text" placeholder="    Ranchhod nagar" class="a47"></div>
+                    </div>
+                </div>
+                <div class="a43">
+                    <div class="a44">
+                        <div style="color: blue; font-weight: 900;">Phone Number</div>
+                        <div> <input type="text" placeholder="     98257xxxxx" class="a45"></div>
+                    </div>
+                    <div class="a46">
+                        <div style="color: blue; font-weight: 900;">Tel no.</div>
+                        <div> <input type="text" placeholder="     0281 265412" class="a47"></div>
+                    </div>
+                    <div class="a46">
+                        <div style="color: blue; font-weight: 900;">E-mail id</div>
+                        <div> <input type="text" placeholder="     xyz@gmail.con" class="a47"></div>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
