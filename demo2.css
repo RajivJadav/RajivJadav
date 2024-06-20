@@ -1,0 +1,125 @@
+body {
+    background-color: #000;
+  }
+  
+  p {
+    font-family: "Poppins", sans-serif;
+    color: #0dee27;
+    font-size: 17px;
+  }
+  
+  .center {
+    text-align: center;
+  }
+  
+  #MonValley #BrightDoor {
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+  }
+  
+  #MonValley:hover #BrightDoor {
+    opacity: 1;
+    color: red;
+  }
+  #MonValley #Step1 {
+    transition: all 0.65s ease-in-out;
+    transform: translate(0px, 150px);
+    /* color: red; */
+  }
+  #MonValley:hover #Step1 {
+    transform: translate(0px, 0px);
+    /* color: red; */
+  }
+  
+  #MonValley #Step2 {
+    transition: all 0.6s ease-in-out;
+    transform: translate(0px, 150px);
+  }
+  #MonValley:hover #Step2 {
+    transform: translate(0px, 0px);
+  }
+  #MonValley #Step3 {
+    transition: all 0.55s ease-in-out;
+    transform: translate(0px, 150px);
+  }
+  #MonValley:hover #Step3 {
+    transform: translate(0px, 0px);
+  }
+  #MonValley #Step4 {
+    transition: all 0.5s ease-in-out;
+    transform: translate(0px, 150px);
+  }
+  #MonValley:hover #Step4 {
+    transform: translate(0px, 0px);
+    background-color: red;
+  }
+  #MonValley #Step5 {
+    transition: all 0.45s ease-in-out;
+    transform: translate(0px, 150px);
+  }
+  #MonValley:hover #Step5 {
+    transform: translate(0px, 0px);
+  }
+  #MonValley #Step6 {
+    transition: all 0.4s ease-in-out;
+    transform: translate(0px, 150px);
+  }
+  #MonValley:hover #Step6 {
+    transform: translate(0px, 0px);
+  }
+  #MonValley #Step7 {
+    transition: all 0.35s ease-in-out;
+    transform: translate(0px, 150px);
+  }
+  #MonValley:hover #Step7 {
+    transform: translate(0px, 0px);
+  }
+  #MonValley #Step8 {
+    transition: all 0.3s ease-in-out;
+    transform: translate(0px, 150px);
+  }
+  #MonValley:hover #Step8 {
+    transform: translate(0px, 0px);
+  }
+  #MonValley #Step9 {
+    transition: all 0.25s ease-in-out;
+    transform: translate(0px, 150px);
+  }
+  #MonValley:hover #Step9 {
+    transform: translate(0px, 0px);
+  }
+  #MonValley #Step10 {
+    transition: all 0.2s ease-in-out;
+    transform: translate(0px, 150px);
+  }
+  #MonValley:hover #Step10 {
+    transform: translate(0px, 0px);
+  }
+  #MonValley #Step11 {
+    transition: all 0.15s ease-in-out;
+    transform: translate(0px, 150px);
+  }
+  #MonValley:hover #Step11 {
+    transform: translate(0px, 0px);
+  }
+  #MonValley #Step12 {
+    transition: all 0.1s ease-in-out;
+    transform: translate(0px, 150px);
+  }
+  #MonValley:hover #Step12 {
+    transform: translate(0px, 0px);
+  }
+  #MonValley #Step13 {
+    transition: all 0.05s ease-in-out;
+    transform: translate(0px, 150px);
+  }
+  #MonValley:hover #Step13 {
+    transform: translate(0px, 0px);
+  }
+  .black-block {
+    background-color: black;
+    margin-top: -5px;
+    min-height: 5px;
+    z-index: 10;
+    position: relative;
+  }
